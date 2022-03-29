@@ -40,5 +40,6 @@ dist-ssr
 .DS_Store
 .prettierignore
 
-assets
+
 package-lock.json
+node_modules
