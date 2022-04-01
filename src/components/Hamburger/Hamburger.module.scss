@@ -1,0 +1,10 @@
+.Hamburger {
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+.Close {
+	display: flex;
+	justify-content: flex-end;
+}
