@@ -1,0 +1,59 @@
+@use "../../mixins.module.scss";
+
+.MobileNav {
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 5;
+	width: 65%;
+	min-height: 100vh;
+	padding-top: 35px;
+	padding-right: 24px;
+	display: flex;
+	flex-direction: column;
+	background-color: var(--explore-gray);
+	backdrop-filter: blur(20px);
+
+	.NavLinks {
+		margin-top: 50px;
+		display: flex;
+		flex-direction: column;
+		row-gap: 30px;
+
+		.NavLink {
+			@include mixins.navText;
+			padding: 15px 0 15px 32px;
+
+			.Link {
+				display: flex;
+				column-gap: 14px;
+				position: relative;
+
+				span:first-of-type {
+					font-weight: bold;
+				}
+			}
+		}
+
+		.ActiveLink {
+			.Link {
+				&::after {
+					display: block;
+					content: "";
+					position: absolute;
+					right: -22px;
+					color: var(--white);
+					width: 4px;
+					height: 31px;
+					background-color: var(--white);
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 700px) {
+	.MobileNav {
+		display: none !important; // !important is necessary because of the framer motion animation
+	}
+}
