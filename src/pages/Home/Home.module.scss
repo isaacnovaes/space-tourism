@@ -1,0 +1,60 @@
+@use "../../mixins.module.scss";
+
+.Home {
+	margin-top: 48px;
+	margin-inline: auto;
+	max-width: 95%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	row-gap: 80px;
+
+	.Description {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		row-gap: 16px;
+
+		h1 {
+			@include mixins.heading5;
+			text-align: center;
+			text-transform: uppercase;
+			font-size: calc(16rem / 16);
+		}
+
+		h2 {
+			@include mixins.heading1;
+			text-align: center;
+			text-transform: uppercase;
+			font-size: calc(80rem / 16);
+		}
+
+		p {
+			@include mixins.bodyText;
+			text-align: center;
+			max-width: 60ch;
+			font-size: calc(15rem / 16);
+			line-height: 25px;
+		}
+	}
+
+	.ExploreContainer {
+		width: 150px;
+		height: 150px;
+		border-radius: 50%;
+		background-color: var(--white);
+		display: grid;
+		place-items: center;
+
+		p {
+			font-family: var(--bellefair);
+			text-transform: uppercase;
+			font-size: var(20rem / 16);
+			text-align: center;
+			color: var(--dark-blue);
+		}
+	}
+}
