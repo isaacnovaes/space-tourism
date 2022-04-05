@@ -1,10 +1,11 @@
 .Header {
-    display: flow-root;
+	display: flow-root;
+
 	.HeaderMobile {
 		width: 95%;
 		margin: 24px auto 0;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
 	}
 }
