@@ -1,11 +1,19 @@
 .Header {
 	display: flow-root;
 
-	.HeaderMobile {
+	.MobileHeader {
 		width: 95%;
 		margin: 24px auto 0;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+	}
+}
+
+@media screen and (min-width: 700px) {
+	.Header {
+		.MobileHeader {
+			display: none;
+		}
 	}
 }
