@@ -1,9 +1,10 @@
 import styles from "./Home.module.scss";
 import { Link } from "react-router-dom";
+import AnimatePageComponent from "../../animatePageComponent/AnimatePageComponent";
 
 const Home = () => {
 	return (
-		<div className={styles.Home}>
+		<AnimatePageComponent className={styles.Home}>
 			<section className={styles.Description}>
 				<h1>So, you want to travel to </h1>
 				<h2>space</h2>
@@ -17,7 +18,7 @@ const Home = () => {
 			<Link to="/destination" className={styles.ExploreContainer}>
 				<p>Explore</p>
 			</Link>
-		</div>
+		</AnimatePageComponent>
 	);
 };
 

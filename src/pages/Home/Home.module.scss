@@ -1,5 +1,3 @@
-@use "../../mixins.module.scss";
-
 .Home {
 	margin-top: 48px;
 	margin-inline: auto;
@@ -25,25 +23,30 @@
 		}
 
 		h1 {
-			@include mixins.heading5;
+			color: var(--light-blue);
+			font-family: var(--barlow);
+			font-size: calc(16rem / 16);
+			font-weight: normal;
+			letter-spacing: 2.7px;
 			text-align: center;
 			text-transform: uppercase;
-			font-size: calc(16rem / 16);
 		}
 
 		h2 {
-			@include mixins.heading1;
+			font-family: var(--bellefair);
+			font-weight: normal;
+			font-size: calc(80rem / 16);
 			text-align: center;
 			text-transform: uppercase;
-			font-size: calc(80rem / 16);
 		}
 
 		p {
-			@include mixins.bodyText;
-			text-align: center;
-			max-width: 60ch;
+			color: var(--light-blue);
+			font-family: var(--barlow);
 			font-size: calc(15rem / 16);
 			line-height: 25px;
+			text-align: center;
+			max-width: 60ch;
 		}
 	}
 
@@ -72,10 +75,12 @@
 		.Description {
 			h1 {
 				font-size: calc(20rem / 16);
+				letter-spacing: 3.8px;
 			}
 			h2 {
 				font-size: calc(150rem / 16);
 			}
+
 			p {
 				font-size: var(16rem / 16);
 				line-height: 28px;
@@ -86,8 +91,15 @@
 		.ExploreContainer {
 			width: 242px;
 			height: 242px;
+
+			&:hover {
+				cursor: pointer;
+				box-shadow: 0 0 0 var(--white), 0 0 0 50px var(--explore-gray);
+			}
+
 			p {
 				font-size: calc(32rem / 16);
+				letter-spacing: 2px;
 			}
 		}
 	}
@@ -117,26 +129,28 @@
 
 			h1 {
 				font-size: calc(28rem / 16);
+				letter-spacing: 4.72px;
 			}
 
 			h2 {
 				transform: translateX(-12px);
 			}
+
 			p {
 				font-size: var(18rem / 16);
 				line-height: 32px;
+				text-align: left;
 				max-width: 460px;
+				letter-spacing: 0;
 			}
 		}
 
 		.ExploreContainer {
 			width: 274px;
 			height: 274px;
-			position: relative;
 
 			&:hover {
-				cursor: pointer;
-				box-shadow: 0 0 0 var(--white), 0 0 0 120px var(--explore-gray);
+				box-shadow: 0 0 0 var(--white), 0 0 0 110px var(--explore-gray);
 			}
 		}
 	}
