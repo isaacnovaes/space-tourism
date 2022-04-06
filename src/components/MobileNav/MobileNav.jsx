@@ -14,26 +14,35 @@ const MobileNav = ({ isVisible, toggle }) => {
 					className={styles.MobileNav}
 					initial={{ x: "100vw", opacity: 0 }}
 					animate={{ x: "0", opacity: 1 }}
-					exit={{ x: "120vw", opacity: 0 }}
+					exit={{ x: "110vw", opacity: 0 }}
+					transition={{ type: "spring", duration: 0.5, bounce: 0.45 }}
 				>
 					<Hamburger type="close" toggle={toggle} />
 					<nav className={styles.NavLinks}>
-						<NavLink to="/" className={NavLinkClasses}>
+						<NavLink to="/" className={NavLinkClasses} onClick={toggle}>
 							<div className={styles.Link}>
 								<span>00</span> <span>Home</span>
 							</div>
 						</NavLink>
-						<NavLink to="/destination" className={NavLinkClasses}>
+						<NavLink
+							to="/destination"
+							className={NavLinkClasses}
+							onClick={toggle}
+						>
 							<div className={styles.Link}>
 								<span>01</span> <span>Destination</span>
 							</div>
 						</NavLink>
-						<NavLink to="/crew" className={NavLinkClasses}>
+						<NavLink to="/crew" className={NavLinkClasses} onClick={toggle}>
 							<div className={styles.Link}>
 								<span>02</span> <span>Crew</span>
 							</div>
 						</NavLink>
-						<NavLink to="/technology" className={NavLinkClasses}>
+						<NavLink
+							to="/technology"
+							className={NavLinkClasses}
+							onClick={toggle}
+						>
 							<div className={styles.Link}>
 								<span>03</span> <span>Technology</span>
 							</div>
