@@ -18,6 +18,12 @@
 		align-items: center;
 		row-gap: 16px;
 
+		h1,
+		h2,
+		p {
+			transition: 0.5s;
+		}
+
 		h1 {
 			@include mixins.heading5;
 			text-align: center;
@@ -48,13 +54,90 @@
 		background-color: var(--white);
 		display: grid;
 		place-items: center;
+		transition: 0.5s;
 
 		p {
 			font-family: var(--bellefair);
 			text-transform: uppercase;
-			font-size: var(20rem / 16);
+			font-size: calc(20rem / 16);
 			text-align: center;
 			color: var(--dark-blue);
+			transition: 0.5s;
+		}
+	}
+}
+
+@media screen and (min-width: 700px) {
+	.Home {
+		.Description {
+			h1 {
+				font-size: calc(20rem / 16);
+			}
+			h2 {
+				font-size: calc(150rem / 16);
+			}
+			p {
+				font-size: var(16rem / 16);
+				line-height: 28px;
+				max-width: 444px;
+			}
+		}
+
+		.ExploreContainer {
+			width: 242px;
+			height: 242px;
+			p {
+				font-size: calc(32rem / 16);
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.Home {
+		margin-top: 251px;
+		margin-inline: auto;
+		width: 95%;
+		max-width: 1300px;
+
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: flex-end;
+		row-gap: 0px;
+
+		.Description {
+			row-gap: 24px;
+			align-items: flex-start;
+
+			h1,
+			h2,
+			p {
+				text-align: left;
+			}
+
+			h1 {
+				font-size: calc(28rem / 16);
+			}
+
+			h2 {
+				transform: translateX(-12px);
+			}
+			p {
+				font-size: var(18rem / 16);
+				line-height: 32px;
+				max-width: 460px;
+			}
+		}
+
+		.ExploreContainer {
+			width: 274px;
+			height: 274px;
+			position: relative;
+
+			&:hover {
+				cursor: pointer;
+				box-shadow: 0 0 0 var(--white), 0 0 0 120px var(--explore-gray);
+			}
 		}
 	}
 }

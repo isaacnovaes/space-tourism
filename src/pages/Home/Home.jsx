@@ -1,4 +1,5 @@
 import styles from "./Home.module.scss";
+import { Link } from "react-router-dom";
 
 const Home = () => {
 	return (
@@ -13,9 +14,9 @@ const Home = () => {
 					experience!
 				</p>
 			</section>
-			<div className={styles.ExploreContainer}>
+			<Link to="/destination" className={styles.ExploreContainer}>
 				<p>Explore</p>
-			</div>
+			</Link>
 		</div>
 	);
 };
