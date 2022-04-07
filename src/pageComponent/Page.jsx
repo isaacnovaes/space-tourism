@@ -1,5 +1,6 @@
 import styles from "./Page.module.scss";
 import Header from "../Header/Header";
+import { AnimatePresence } from "framer-motion";
 
 const Page = ({ children, type }) => {
 	const pageType = {
@@ -14,7 +15,9 @@ const Page = ({ children, type }) => {
 	return (
 		<div className={classes}>
 			<Header />
-			<main>{children}</main>
+			<main>
+				<AnimatePresence exitBeforeEnter>{children}</AnimatePresence>
+			</main>
 		</div>
 	);
 };
