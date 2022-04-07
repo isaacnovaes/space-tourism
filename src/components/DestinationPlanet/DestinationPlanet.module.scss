@@ -1,0 +1,237 @@
+.Planet {
+	margin-top: 32px; // distance from the destination heading
+	margin-inline: auto;
+	width: 95%;
+
+	display: flex;
+	flex-direction: column;
+	row-gap: 26px; // space between .PlanetImage and .PlanetDescriptionContainer
+
+	.PlanetImage {
+		display: block;
+		background-size: cover;
+		background-position: center;
+		width: 170px;
+		height: 170px;
+		margin-inline: auto; // justify-self
+	}
+
+	.PlanetDescriptionContainer {
+		display: flex;
+		flex-direction: column;
+		row-gap: 32px; // divide top and bottom margin
+
+		.PlanetDescription {
+			.NavLinks {
+				display: flex;
+				justify-content: space-around;
+				width: 237.5px;
+				margin-inline: auto;
+				.Link {
+					color: var(--white);
+					font-family: var(--barlow-condensed);
+					font-size: calc(14rem / 16);
+					letter-spacing: 2.36px;
+					text-transform: uppercase;
+				}
+
+				.ActiveLink {
+					position: relative;
+					&::after {
+						position: absolute;
+						display: block;
+						content: "";
+						width: 100%;
+						height: 3px;
+						bottom: -8px;
+						background-color: var(--white);
+					}
+				}
+			}
+
+			h1 {
+				color: var(--white);
+				font-family: var(--bellefair);
+				font-size: calc(56rem / 16);
+				font-weight: normal;
+				letter-spacing: 0;
+				text-align: center;
+				text-transform: uppercase;
+				margin-top: 20px;
+			}
+
+			p {
+				color: var(--light-blue);
+				font-family: var(--barlow);
+				font-size: calc(15rem / 16);
+				letter-spacing: 0;
+				line-height: 25px;
+				text-align: center;
+				margin-top: 1px;
+				margin-inline: auto;
+				width: 100%;
+				max-width: 327px;
+			}
+		}
+
+		.DividerBar {
+			width: 100%;
+			height: 1px;
+			background-color: var(--border-gray);
+		}
+
+		.PlanetNumberInformation {
+			display: flex;
+			flex-direction: column;
+			row-gap: 32px;
+			.PlanetAverageDistance,
+			.PlanetTravel {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				row-gap: 12px;
+
+				span:first-of-type {
+					color: var(--light-blue);
+					font-family: var(--barlow-condensed);
+					font-size: calc(14rem / 16);
+					letter-spacing: 2.36px;
+					text-transform: uppercase;
+				}
+				span:last-of-type {
+					color: var(--white);
+					font-family: var(--bellefair);
+					font-weight: normal;
+					font-size: calc(28rem / 16);
+					text-transform: uppercase;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 700px) {
+	.Planet {
+		margin-top: 60px; // distance from the destination heading
+		row-gap: 42px; // space between .PlanetImage and .PlanetDescriptionContainer
+
+		.PlanetImage {
+			width: 300px;
+			height: 300px;
+		}
+
+		.PlanetDescriptionContainer {
+			display: flex;
+			align-items: center;
+			row-gap: 49px; // divide top and bottom margin
+
+			.PlanetDescription {
+				.NavLinks {
+					width: 285.5px;
+
+					.Link {
+						font-size: calc(16rem / 16);
+						letter-spacing: 2.7px;
+					}
+
+					.ActiveLink {
+						&::after {
+							bottom: -12px;
+						}
+					}
+				}
+
+				h1 {
+					font-size: calc(80rem / 16);
+					margin-top: 43px;
+				}
+
+				p {
+					font-size: calc(16rem / 16);
+					line-height: 28px;
+					margin-top: 8px;
+					max-width: 573px;
+				}
+			}
+
+			.PlanetNumberInformation {
+				flex-direction: row;
+				justify-content: space-around;
+				row-gap: 0;
+				width: 50%;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.Planet {
+		margin-top: 64px; // distance from the destination heading
+		max-width: 1000px;
+
+		flex-direction: row;
+		justify-content: space-between;
+		row-gap: 0;
+
+		.PlanetImage {
+			width: 445px;
+			height: 445px;
+			margin-inline: 0;
+		}
+
+		.PlanetDescriptionContainer {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			row-gap: 28px; // divide top and bottom margin
+
+			.PlanetDescription {
+				.NavLinks {
+					justify-content: space-around;
+					width: 285.5px;
+					margin-inline: 0;
+
+					.Link {
+						font-size: calc(16rem / 16);
+						letter-spacing: 2.7px;
+					}
+
+					.ActiveLink {
+						&::after {
+							bottom: -12px;
+						}
+					}
+				}
+
+				h1 {
+					font-size: calc(100rem / 16);
+					text-align: left;
+					margin-top: 37px;
+				}
+
+				p {
+					font-size: calc(18rem / 16);
+					line-height: 32px;
+					text-align: left;
+					margin-top: 14px;
+					margin-inline: 0;
+					max-width: 444px;
+				}
+			}
+
+			.PlanetNumberInformation {
+				width: 100%;
+				flex-direction: row;
+				justify-content: flex-start;
+				align-items: center;
+				row-gap: 0;
+				column-gap: 79px;
+				.PlanetAverageDistance,
+				.PlanetTravel {
+					width: 143px;
+					align-items: flex-start;
+				}
+			}
+		}
+	}
+}
