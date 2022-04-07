@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;700&display=swap");
 
 :root {
 	/* colors */
@@ -14,13 +15,15 @@
 	/* typography */
 
 	--bellefair: "Bellefair", serif;
-	--barlow: "Barlow Condensed", sans-serif;
+	--barlow: "Barlow", sans-serif;
+	--barlow-condensed: "Barlow Condensed", sans-serif;
 }
 
 html {
 	box-sizing: border-box;
 	-webkit-text-size-adjust: 100%; /* Prevent adjustments of font size after orientation changes in iOS. */
 	font-size: 16px;
+	font-weight: normal;
 	letter-spacing: 0;
 	color: var(--white);
 }
