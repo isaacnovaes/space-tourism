@@ -54,6 +54,20 @@
 
 		.NavContainer {
 			column-gap: 50px;
+			padding-left: 123px;
+			backdrop-filter: blur(10px);
+			position: relative;
+
+			&::after {
+				display: block;
+				position: absolute;
+				content: "";
+				width: 473px;
+				height: 1px;
+				top: 50%;
+				left: -440px;
+				background-color: var(--light-gray);
+			}
 
 			.Link {
 				font-size: calc(16rem / 16);

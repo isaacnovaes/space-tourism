@@ -82,7 +82,7 @@
 			}
 
 			p {
-				font-size: var(16rem / 16);
+				font-size: calc(16rem / 16);
 				line-height: 28px;
 				max-width: 444px;
 			}
@@ -137,7 +137,7 @@
 			}
 
 			p {
-				font-size: var(18rem / 16);
+				font-size: calc(18rem / 16);
 				line-height: 32px;
 				text-align: left;
 				max-width: 460px;
