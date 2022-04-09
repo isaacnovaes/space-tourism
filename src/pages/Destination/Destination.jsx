@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
-import styles from "./Destination.module.scss";
 import { Route, Routes } from "react-router-dom";
-import AnimatePageComponent from "../../animatePageComponent/AnimatePageComponent";
+import Heading from "../../components/Heading/Heading";
 import DestinationPlanet from "../../components/DestinationPlanet/DestinationPlanet";
+import AnimatePageComponent from "../../animatePageComponent/AnimatePageComponent";
 
 const Destination = () => {
 	const [destinations, setDestinations] = useState(undefined);
@@ -22,10 +22,8 @@ const Destination = () => {
 	}, []);
 
 	return (
-		<AnimatePageComponent className={styles.Destination}>
-			<h1>
-				<span>01</span>Pick your destination
-			</h1>
+		<AnimatePageComponent>
+			<Heading number="01" text="Pick your destination" />
 			{destinations && (
 				<Routes>
 					<Route
