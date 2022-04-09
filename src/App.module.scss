@@ -1,4 +1,4 @@
 .App {
 	position: relative;
-	overflow-x: hidden; // animation-wise
+	overflow: hidden; // animation-wise, prevent additional scroll bar to show up
 }
