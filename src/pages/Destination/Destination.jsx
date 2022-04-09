@@ -9,7 +9,7 @@ const Destination = () => {
 
 	useEffect(() => {
 		const getPlanets = async () => {
-			const data = await fetch("../../../assets/data.json");
+			const data = await fetch("/assets/data.json");
 			const { destinations: destinationArray } = await data.json();
 			const destinationObject = destinationArray.reduce((result, item) => {
 				result[item.name.toLowerCase()] = { ...item };
