@@ -1,12 +1,13 @@
 import { NavLink } from "react-router-dom";
 import styles from "./DestinationPlanet.module.scss";
+import AnimateInnerPageComponent from "../../animateInnerPageComponent/AnimateInnerPageComponent";
 
 const DestinationPlanet = ({ planet }) => {
 	const NavLinkClasses = ({ isActive }) =>
 		isActive ? `${styles.Link} ${styles.ActiveLink}` : `${styles.Link}`;
 
 	return (
-		<div className={styles.Planet}>
+		<AnimateInnerPageComponent className={styles.Planet}>
 			<img
 				className={styles.PlanetImage}
 				src={`../../../assets/destination/image-${planet.name.toLowerCase()}.webp`}
@@ -45,7 +46,7 @@ const DestinationPlanet = ({ planet }) => {
 					</div>
 				</div>
 			</div>
-		</div>
+		</AnimateInnerPageComponent>
 	);
 };
 
