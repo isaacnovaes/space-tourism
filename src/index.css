@@ -48,6 +48,10 @@ html:focus-within {
 	font-size: 100%;
 }
 
+body {
+	background-color: rgb(11, 14, 23); /* Placeholder for background loading */
+}
+
 /* Remove the border on images inside links in IE 10. */
 img {
 	border-style: none;

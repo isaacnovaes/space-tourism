@@ -47,6 +47,10 @@ function App() {
 					element={<Navigate to="/destination/moon" />}
 				/>
 				<Route path="/crew" element={<Navigate to="/crew/douglashurley" />} />
+				<Route
+					path="/technology"
+					element={<Navigate to="/technology/launchvehicle" />}
+				/>
 			</Routes>
 		</div>
 	);
