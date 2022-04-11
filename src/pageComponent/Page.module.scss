@@ -3,6 +3,8 @@
 	background-size: cover;
 	background-position: center;
 	background-color: rgb(11, 14, 23); // Placeholder for background loading
+	max-width: 2000px;
+	margin-inline: auto;
 }
 
 .Home {
@@ -13,9 +15,6 @@
 }
 .Crew {
 	background-image: url("/assets/crew/background-crew-mobile.jpg");
-	// background-color: rgba(128, 128, 128, 0.237);
-	background-color: rgb(200, 200, 200);
-	background-blend-mode: multiply;
 }
 .Technology {
 	background-image: url("/assets/technology/background-technology-mobile.jpg");
