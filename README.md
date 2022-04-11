@@ -1,6 +1,8 @@
 # Frontend Mentor - Space tourism website solution
 
-![Project Preview](./assets/preview.jpg)
+[Live project](https://space-tourism-isaac.netlify.app)
+
+![Project Preview](./public/assets/preview.jpg)
 
 ## Table of contents
 
@@ -32,7 +34,7 @@ Users should be able to:
 
 ### Links
 
-- [Live Site URL](https://your-live-site-url.com)
+- [Live project URL](https://space-tourism-isaac.netlify.app)
 
 ## My process
 
@@ -56,13 +58,14 @@ Users should be able to:
 
 ```js
 const proudOfThisFunc = () => {
-  onsole.log("🎉");
+	onsole.log("🎉");
 };
 ```
 
 ### Continued development
 
 <!-- to be filled out -->
+
 ### Useful resources
 
 - [Avoid margin collapse by using display flow-root](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Block_formatting_context#:~:text=Copy%20to%20Clipboard-,Exclude%20external%20floats,-In%20the%20following) - This helped me using margin on the header without making the whole document to flow down. I really liked it and will use it going forward.
