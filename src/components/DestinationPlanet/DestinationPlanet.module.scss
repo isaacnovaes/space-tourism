@@ -228,7 +228,7 @@
 				column-gap: 79px;
 				.PlanetAverageDistance,
 				.PlanetTravel {
-					width: 143px;
+					width: max-content;
 					align-items: flex-start;
 				}
 			}
