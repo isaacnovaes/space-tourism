@@ -15,8 +15,6 @@
   - [My process](#my-process)
     - [Built with](#built-with)
     - [What I learned](#what-i-learned)
-    - [Continued development](#continued-development)
-    - [Useful resources](#useful-resources)
 
 ## Overview
 
@@ -52,20 +50,4 @@ Users should be able to:
 
 ### What I learned
 
-<!-- to be filled out -->
-
-<!-- To see how you can add code snippets, see below: -->
-
-```js
-const proudOfThisFunc = () => {
-	onsole.log("🎉");
-};
-```
-
-### Continued development
-
-<!-- to be filled out -->
-
-### Useful resources
-
-- [Avoid margin collapse by using display flow-root](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Block_formatting_context#:~:text=Copy%20to%20Clipboard-,Exclude%20external%20floats,-In%20the%20following) - This helped me using margin on the header without making the whole document to flow down. I really liked it and will use it going forward.
+ [Avoid margin collapse by using display flow-root](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Block_formatting_context#:~:text=Copy%20to%20Clipboard-,Exclude%20external%20floats,-In%20the%20following) - This helped me using margin on the header without making the whole document to flow down. I really liked it and will use it going forward.
