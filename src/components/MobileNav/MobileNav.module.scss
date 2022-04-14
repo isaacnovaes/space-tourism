@@ -11,6 +11,7 @@
 	flex-direction: column;
 	background-color: var(--explore-gray);
 	backdrop-filter: blur(20px);
+	-webkit-backdrop-filter: blur(20px);
 
 	.NavLinks {
 		margin-top: 50px;

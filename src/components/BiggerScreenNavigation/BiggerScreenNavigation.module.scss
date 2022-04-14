@@ -24,16 +24,10 @@
 				font-weight: normal;
 				font-size: calc(14rem / 16);
 				letter-spacing: 2.36px;
-
 				text-transform: uppercase;
-
-				span {
-					display: none;
-				}
-			}
-
-			.ActiveLink {
 				position: relative;
+				transition: 0.5s;
+
 				&::after {
 					display: block;
 					content: "";
@@ -41,6 +35,17 @@
 					height: 3px;
 					position: absolute;
 					bottom: -39.5px;
+					background-color: transparent;
+					transition: 0.5s;
+				}
+
+				span {
+					display: none;
+				}
+			}
+
+			.ActiveLink {
+				&::after {
 					background-color: var(--white);
 				}
 			}
@@ -72,6 +77,12 @@
 			.Link {
 				font-size: calc(16rem / 16);
 				letter-spacing: 2.7px;
+
+				&:hover {
+					&::after {
+						background-color: var(--light-gray);
+					}
+				}
 
 				span {
 					display: inline;

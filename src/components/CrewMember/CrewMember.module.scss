@@ -33,6 +33,7 @@
 				height: 10px;
 				border-radius: 50%;
 				background-color: var(--border-gray);
+				transition: 0.5s;
 			}
 
 			.ActiveLink {
@@ -134,6 +135,10 @@
 				.Link {
 					width: 15px;
 					height: 15px;
+
+					&:hover {
+						background-color: var(--light-gray);
+					}
 				}
 			}
 

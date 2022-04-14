@@ -37,7 +37,7 @@
 				width: 40px;
 				height: 40px;
 				border-radius: 50%;
-				outline: 1px solid var(--border-gray);
+				border: 1px solid var(--border-gray);
 				display: grid;
 				place-items: center;
 				font-family: var(--bellefair);
@@ -172,6 +172,10 @@
 					height: 80px;
 					font-size: calc(32rem / 16);
 					letter-spacing: 2px;
+
+					&:hover {
+						border-color: var(--white);
+					}
 				}
 			}
 
